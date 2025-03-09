@@ -1,123 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <div class="container">
+      <div class="sidebar">
+        <h1><span><i class="fa-solid fa-grip"></i></span> Dashboard</h1>
+        <div class="menu">
+          <ul>
+            <li>Home</li>
+            <li>Profile</li>
+            <li>Messages</li>
+            <li>History</li>
+            <li>Tasks</li>
+            <li>Communities</li>
+          </ul>
+        </div>
+        <div class="others">
+          <ul>
+            <li>Settings</li>
+            <li>Support</li>
+            <li>Privacy</li>
+          </ul>
+        </div>
+      </div>
 
-        <div class="sidebar">
-                <h1>Dashboard</h1>
-                <div class="menu">
-                <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
-                </ul>
-            </div>
-            <div class="others">
-                <ul>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
-                </ul>
-            </div>
+      <div class="header">
+        <div class="top">
+          <div class="search-bar">
+            <label for="search"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></label>
+            <input type="text" id="search" name="search" />
+          </div>
+          <div class="icons">
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-regular fa-user"></i>
+            <p>Morgan Oakley</p>
+          </div>
         </div>
-        
-        <div class="header">
-            <div class="top">
-                <div class="search-bar">
-                    <label for="search">search</label>
-                    <input type="text" id="search" name="search">
-                </div>
-                <p>Morgan Oakley</p>
-            </div>
-            
-            <div class="user">
-                <p>Hi there, <br> <span>Morgan Oakley (@morgan)</span></p>
-                <div class="buttons">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="projects">
-            <p>Your Projects</p>
-            <div class="card-container">
-                <div class="card">
-                    <p class="title">Super Cool Project</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ullam similique, corrupti temporibus laboriosam facere!</p>
-                </div>
-                <div class="card">
-                    <p class="title">Less Cool Project</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ullam similique, corrupti temporibus laboriosam facere!</p>
-                </div>
-                <div class="card">
-                    <p class="title">Impossible App</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ullam similique, corrupti temporibus laboriosam facere!</p>
-                </div>
-                <div class="card">
-                    <p class="title">Easy Peasy App</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ullam similique, corrupti temporibus laboriosam facere!</p>
-                </div>
-                <div class="card">
-                    <p class="title">Ad Blocker</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ullam similique, corrupti temporibus laboriosam facere!</p>
-                </div>
-                <div class="card">
-                    <p class="title">Money Maker</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ullam similique, corrupti temporibus laboriosam facere!</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="announcements">
-            <p>Announcements</p>
-            <div class="announcement-cont">
 
-                <div class="list">
-                    <p class="announcement-title">Site Maintenance</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolores consectetur suscipit et, amet sed!</p>
-                </div>
-                <div class="list">
-                    <p class="announcement-title">Community Share Day</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolores consectetur suscipit et, amet sed!</p>
-                </div>
-                <div class="list">
-                    <p class="announcement-title">Updated Privacy Policy</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolores consectetur suscipit et, amet sed!</p>
-                </div>
-            </div>
+        <div class="user">
+          <p>
+            Hi there, <br />
+            <i class="fa-regular fa-user"></i>
+            <span> Morgan Oakley (@morgan)</span>
+          </p>
+          <div class="buttons">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
         </div>
-        
-        <div class="trending">
-            <div class="trend-container">
-                <div class="name">
-                    <p>@tegan</p>
-                    <p>World Peace Builder</p>
-                </div>
-                <div class="name">
-                    <p>@morgan</p>
-                    <p>Super Cool Project</p>
-                </div>
-                <div class="name">
-                    <p>@kendall</p>
-                    <p>Life Changing App</p>
-                </div>
-                <div class="name">
-                    <p>@alex</p>
-                    <p>No Traffic Maker</p>
-                </div>
-            </div>
+      </div>
+
+      <div class="projects">
+        <p>Your Projects</p>
+        <div class="card-container">
+          <div class="card">
+            <p class="title">Super Cool Project</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              ullam similique, corrupti temporibus laboriosam facere!
+            </p>
+          </div>
+          <div class="card">
+            <p class="title">Less Cool Project</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              ullam similique, corrupti temporibus laboriosam facere!
+            </p>
+          </div>
+          <div class="card">
+            <p class="title">Impossible App</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              ullam similique, corrupti temporibus laboriosam facere!
+            </p>
+          </div>
+          <div class="card">
+            <p class="title">Easy Peasy App</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              ullam similique, corrupti temporibus laboriosam facere!
+            </p>
+          </div>
+          <div class="card">
+            <p class="title">Ad Blocker</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              ullam similique, corrupti temporibus laboriosam facere!
+            </p>
+          </div>
+          <div class="card">
+            <p class="title">Money Maker</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              ullam similique, corrupti temporibus laboriosam facere!
+            </p>
+          </div>
         </div>
+      </div>
+
+      <div class="announcements">
+        <p>Announcements</p>
+        <div class="announcement-cont">
+          <div class="list">
+            <p class="announcement-title">Site Maintenance</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              dolores consectetur suscipit et, amet sed!
+            </p>
+          </div>
+          <div class="list">
+            <p class="announcement-title">Community Share Day</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              dolores consectetur suscipit et, amet sed!
+            </p>
+          </div>
+          <div class="list">
+            <p class="announcement-title">Updated Privacy Policy</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              dolores consectetur suscipit et, amet sed!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="trending">
+        <div class="trend-container">
+          <div class="name">
+            <p><span><i class="fa-regular fa-user"></i></span> @tegan</p>
+            <p>World Peace Builder</p>
+          </div>
+          <div class="name">
+            <p><span><i class="fa-regular fa-user"></i></span> @morgan</p>
+            <p>Super Cool Project</p>
+          </div>
+          <div class="name">
+            <p><span><i class="fa-regular fa-user"></i></span> @kendall</p>
+            <p>Life Changing App</p>
+          </div>
+          <div class="name">
+            <p><span><i class="fa-regular fa-user"></i></span> @alex</p>
+            <p>No Traffic Maker</p>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
